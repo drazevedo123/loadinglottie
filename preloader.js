@@ -1,3 +1,5 @@
+// Certifique-se de incluir a biblioteca Lottie antes deste código.
+
 const overlay = document.createElement('div');
 overlay.id = 'loader';
 overlay.style.cssText = `
@@ -24,7 +26,6 @@ lottieContainer.style.cssText = `
     left: 50%;
     transform: translate(-50%, -50%);
 `;
-lottieContainer.style.display = 'none';
 
 document.body.appendChild(overlay);
 document.body.appendChild(lottieContainer);
@@ -42,8 +43,5 @@ function hideOverlay() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    hideOverlay(); // Teste sem o setTimeout
-});
-
-window.addEventListener('load', hideOverlay);
+document.addEventListener('DOMContentLoaded', hideOverlay);
+// Considere remover o evento 'load' se não for necessário
