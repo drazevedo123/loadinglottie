@@ -38,7 +38,7 @@ function hideOverlay() {
         renderer: 'svg', // ou 'canvas' se preferir
         loop: true,
         autoplay: true,
-        path: 'https://drazevedo123.github.io/loadinglottie/loading1.json',
+        path: 'https://drazevedo123.github.io/loadinglottie/loading.json',
     });
 }
 
